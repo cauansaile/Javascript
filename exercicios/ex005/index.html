@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usando DOM</title>
+</head>
+<body>
+    <h1>Aprendendo a usar o DOM</h1>
+    <p>Esse é o resultado!</p>
+    <p>aprendendo a usar o tal do <strong>DOM</strong> na prática</p>
+    <div class="caixa">clique aqui</div>
+    <div class="prompt">Não, clique aqui</div>
+
+    <script>
+        var d = document.getElementsByClass('caixa')
+        d.style.background = "blue"
+
+        var e = document.getElementsByClassName('caixa')[0]
+        e.style.background = "blue"
+
+        var f = window.document.getElementsByClassName("prompt")[0]
+        f.style.background = "blue"
+
+        var g = window.document.querySelector("div.prompt")
+        g.style.background = "blue"
+    </script>
+</body>
+</html>
