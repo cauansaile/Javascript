@@ -23,6 +23,17 @@ header > h1{
 
 }
 
+div#mensagem{
+    height: 30%;
+    background-color: aqua;
+}
+
+div#imagem{
+    height: 50%;
+    background-color: blue;
+    margin: 10px;
+}
+
 section{
     margin: auto;
     background: white;
@@ -30,6 +41,7 @@ section{
     width: 500px;
     border-radius: 20px;
     box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.358);
+    padding: 10px;
 
     
 }
