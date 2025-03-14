@@ -24,14 +24,20 @@ header > h1{
 }
 
 div#mensagem{
-    height: 30%;
-    background-color: aqua;
+    margin: auto;
+    height: 200px;
+    width: 200px;
+    
 }
 
 div#imagem{
     height: 50%;
-    background-color: blue;
+    
     margin: 10px;
+}
+
+#imagem>img{
+    width: 30%;
 }
 
 section{
