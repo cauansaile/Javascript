@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicio</title>
+    <link rel="stylesheet" href="estilos/style.css">
+</head>
+<body>
+    <header>
+        <h1>Verificador de idade</h1>
+    </header>
+   
+    <section>
+        <div>
+            <form action="form.php">
+                <label for="iano">Ano de nascimento</label>
+                <input type="number" name="ano" id="iano" min="1900" max="2025" required > <br><br>
+
+                Sexo
+                <input type="radio" name="radsex" id="imasc" checked>
+                <label for="imasc">Masculino</label>
+                
+                <input type="radio" name="radsex" id="ifem">
+                <label for="ifem">Feminino</label> <br><br>
+
+                <input type="submit" value="Verificar" onclick="verificar()">
+            </form>
+        </div>
+        <div id="img">
+            <p id="mensagem">
+                vai aparecer uma mensagem
+            </p>
+            <img src="imagens/homem01.png" alt="imagem correspondente" id="foto">
+        </div>
+    </section>
+    
+    <footer>
+        <p>Cauan Saile é o better</p>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
