@@ -4,6 +4,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 
 }
 body{
@@ -25,19 +26,26 @@ header > h1{
 
 div#mensagem{
     margin: auto;
-    height: 200px;
+    height: 100px;
     width: 200px;
     
 }
 
 div#imagem{
+    margin: auto;
     height: 50%;
-    
     margin: 10px;
+
 }
 
 #imagem>img{
-    width: 30%;
+    width: 55%;
+    margin: auto;
+    position: absolute;
+    left: 50%;
+    top: 35%;
+    transform: translate(-50%, -50%);
+
 }
 
 section{
