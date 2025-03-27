@@ -35,15 +35,31 @@ section{
 }
 
 form{
-
-    padding: 10px;
+    font-size: 1.1em;
+    padding: 15px;
+}
+#inicio{
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
-button{
+#passo{
+    margin-bottom: 25px;
+    
+}
+
+#fim{
+    margin-bottom: 15px;
+}
+#button{
     border-radius: 5px;
     height: 30px;
     width: 60px;
-    margin: 10px;
+    margin: 0px;
+}
+#button:hover{
+    background-color: rgb(124, 124, 124);
+    cursor: pointer;
 }
 
 #mensagem{
