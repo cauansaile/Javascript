@@ -34,6 +34,14 @@ section{
     
 }
 
+#box1{
+    padding: 10px;
+}
+#tabuada{
+    padding: 10px;
+    margin: 10px;
+}
+
 footer{
     margin-top: 30px;
     color: white;

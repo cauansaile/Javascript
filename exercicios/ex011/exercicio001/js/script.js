@@ -9,8 +9,15 @@ function contar(){
     var msg = document.getElementById('mensagem')
     var c = 0
     msg.innerHTML = ""
-    for(c = n1; c <= n2; c += n3){
-        msg.innerHTML += c + " " + `\u{1f449}`
+    if(n1<=n2){
+        for(c = n1; c <= n2; c += n3){
+            msg.innerHTML += c + " " + `\u{1f449}`
+        }
+    }
+        else{
+        for(c = n1; c >= n2; c -= n3){
+            msg.innerHTML += c + " " + `\u{1f449}`
     }
     
+}
 }
