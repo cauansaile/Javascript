@@ -1,18 +1,36 @@
-
-
-function add(){
 let n1 = document.getElementById('num')
-let tela = document.getElementById('lista')
-let n2 = Number(n1.value)
-let valores = [n2]
-if(n1.value.length == 0 || n1.value >100){
-    window.alert('Por favor, digite um número válido!')
+let lista = document.getElementById('lista')
+let valores = []
+let res = document.getElementById('resultado')
+
+function isNumero(n){
+    if(Number(n) >=1 && Number(n) <= 100){
+        return true
 }else{
+    return false
+}
+}
+
+function inLista(n,l){
+    if(l.indexOf(Number(n)) != -1){
+        return true
+    }else{
+        return false
+    }
+
+}
+function add(){
+    if(isNumero(n1.value) && !inLista(n1.value, valores)){
+        res.innerHTML = `Valor ${n1.value} adicionado com sucesso!`
     
-    for(let pos in valores){
+    
+    }else{
+    window.alert('Número inválido')
+    
+    /*for(let pos in valores){
         let item = document.createElement ('option')
         item.text = `valor ${n2} adicionado`
-        tela.appendChild(item)
+        tela.appendChild(item)*/
         
     
         
@@ -20,14 +38,15 @@ if(n1.value.length == 0 || n1.value >100){
 
         }
     }
-}function finalizar(){
+
+/*function finalizar(){
     let n1 = document.getElementById('num')
     let n2 = Number(n1.value)
     let valores = []
     valores.push(n2)
-    let res = document.getElementById('resultado')
+    
     let total = valores.length
-    res.innerHTML = `A lista contém ${total} itens.`
+    res.innerHTML = `A lista contém ${total} itens.
 
-}
+}*/
 
