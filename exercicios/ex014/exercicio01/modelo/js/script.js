@@ -21,32 +21,21 @@ function inLista(n,l){
 }
 function add(){
     if(isNumero(n1.value) && !inLista(n1.value, valores)){
-        res.innerHTML = `Valor ${n1.value} adicionado com sucesso!`
+        valores.push(Number(n1.value))
+        let item = document.createElement ('option')
+        item.text = `valor ${n1.value} adicionado`
+        lista.appendChild(item)
     
     
     }else{
-    window.alert('Número inválido')
-    
-    /*for(let pos in valores){
-        let item = document.createElement ('option')
-        item.text = `valor ${n2} adicionado`
-        tela.appendChild(item)*/
-        
-    
-        
+    window.alert('Número inválido ou já encontrado na lista')
+}}
 
-
-        }
-    }
-
-/*function finalizar(){
-    let n1 = document.getElementById('num')
-    let n2 = Number(n1.value)
-    let valores = []
-    valores.push(n2)
-    
+function finalizar(){
     let total = valores.length
     res.innerHTML = `A lista contém ${total} itens.
+}
+    
 
-}*/
+
 
