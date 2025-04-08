@@ -34,7 +34,7 @@ function add(){
     
     
     }else{
-    window.alert('Número inválido ou já encontrado na lista')
+    window.prompt('Número inválido ou já encontrado na lista')
 
     
 }
@@ -43,10 +43,15 @@ function add(){
 }
 
 function finalizar(){
-    valores.sort()
+    valores.sort((a,b) => a-b)
     let qtlista = valores.length
     let maiorn = valores[valores.length - 1]
     let menorn = valores[0]
+    let soma =  0
+    for(let pos in valores){
+        soma += valores[pos]
+    }
+    let media = soma / qtlista
     if(qtlista == 1){
         res1.innerHTML = `A lista contém 1 valor cadstrado apenas `
     }else{
@@ -54,6 +59,7 @@ function finalizar(){
         res2.innerHTML = `O maior número cadastrado foi ${maiorn}`
         res3.innerHTML = `O menor número cadastrado foi ${menorn}`
         res4.innerHTML = `A soma dos valores cadastrados foi de ${soma}`
+        res5.innerHTML = `A média dos valores cadastrados é ${media}`
     }
 
     
