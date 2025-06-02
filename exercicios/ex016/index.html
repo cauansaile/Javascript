@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="texto">Esse texto vai sumir</p>
+    <div onmouseenter="trocarTexto()" onmouseout="voltarTexto()" id="hover">Passe o mouse aqui para trocar o texto de cima</div>
+    <script>
+        function trocarTexto() {
+          var textos = document.getElementById("texto")
+          var mudança = document.getElementById("hover")
+          textos.innerHTML = "Você passou o mouse ali embaixo";
+        }
+
+        function voltarTexto(){
+            var textos = document.getElementById("texto")
+            textos.innerHTML = "Esse texto vai sumir"
+        }
+    </script>
+</body>
+</html>
